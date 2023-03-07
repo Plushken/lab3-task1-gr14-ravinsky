@@ -56,5 +56,6 @@ else{
     return 1;
     }
   }
+printf("Total day in %d %d month = %d days\n", year, month, count_day_in_month(year,month));
 
 }

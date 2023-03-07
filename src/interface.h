@@ -9,7 +9,7 @@
 // and calc_day_after function calculates and return the day after
 // implementation is in server.c file
 
-
+int count_day_in_month(int year, int month);
 
 
 #endif
