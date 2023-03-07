@@ -13,6 +13,8 @@ int count_day_in_month(int year, int month);
 
 void calc_day_before(int year, int month, int day);
 
+void calc_day_after(int year, int month, int day);
+
 
 
 #endif

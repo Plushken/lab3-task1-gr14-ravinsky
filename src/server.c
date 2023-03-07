@@ -48,4 +48,23 @@ void calc_day_before(int year, int month, int day){
   printf("The day before: %d %d %d\n", year, month, day);
 }
 
+void calc_day_after(int year, int month, int day){
+  if (day<count_day_in_month(year,month))
+    day++;
+  else
+  {
+    if(month<12)
+    {
+      month++;
+      day = 1;
+    }
+    else{
+      year++;
+      month = 1;
+      day = 1;
+    }
+  }
+  printf("The day after: %d %d %d", year, month, day);
+}
+
 
