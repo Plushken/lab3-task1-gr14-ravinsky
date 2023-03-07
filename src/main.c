@@ -57,5 +57,6 @@ else{
     }
   }
 printf("Total day in %d %d month = %d days\n", year, month, count_day_in_month(year,month));
+calc_day_before(year, month, day);
 
 }

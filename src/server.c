@@ -29,4 +29,23 @@ int count_day_in_month(int year, int month) {
   
 }
 
+void calc_day_before(int year, int month, int day){
+    if (day>=2)
+    day--;
+  else
+  {
+    if(month>=2)
+    {
+      day = count_day_in_month(year,month-1);
+      month--;
+    }
+    else{
+      year--;
+      month = 12;
+      day = 31;
+    }
+  }
+  printf("The day before: %d %d %d\n", year, month, day);
+}
+
 
